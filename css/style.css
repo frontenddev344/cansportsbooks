@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+:root {
+    --red: #e81f3e;
+    --white: #fff;
+    --black: #000;
+}
+
+/* default css start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 12px 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 9999999;
+}
+
+/* STICKY STYLES */
+.page-header.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 14px 0;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    background-color: var(--white);
+    z-index: 999999;
+    box-shadow: var(--red) 6px 4px;
+
+
+
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation.mySidenavs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navigation.mySidenavs ul li a {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.navigation.mySidenavs ul li a.active {
+    color: #ea2129;
+
+}
+
+.navigation.mySidenavs ul li a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #ea2129;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.navigation.mySidenavs ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation.mySidenavs ul li {
+    padding: 0 0 0 50px;
+}
+
+.toggle {
+    display: none;
+}
+
+a.closebtn {
+    display: none;
+}
+
+a.site-logo img {
+    max-width: 200px;
+}
+
+/* Banner */
+.site-banner {
+    background: url(../images/home.jpg);
+    padding: 120px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 78px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.site-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+.bnr-text h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+    max-width: 500px;
+    line-height: 60px;
+}
+
+.bnr-text h1 span {
+    color: var(--red);
+}
+
+.bnr-text p {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 34px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+
+/* Footer css */
+footer.footer {
+    background-color: #20273f;
+    padding: 60px 0 0 0;
+}
+
+footer.footer img.knsl-footer-logo {
+    width: 100%;
+    margin-bottom: 33px;
+    max-width: 221px;
+}
+
+footer.footer .knsl-footer-about {
+    display: block;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+footer.footer .knsl-footer-social {
+    padding-top: 50px;
+}
+
+footer.footer .knsl-footer-social i {
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+footer.footer .knsl-footer-social a {
+    color: #fff;
+    margin-right: 10px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+footer.footer .footer-inner h4 {
+    position: relative;
+    margin-bottom: 33px;
+    color: #ECFAFB;
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+footer.footer .footer-menu li {
+    margin-bottom: 20px;
+}
+
+footer.footer ul.footer-menu li a {
+    color: #fff;
+    font-size: 16px;
+
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+
+footer.footer ul.footer-menu li a:hover {
+    color: var(--red);
+    padding-left: 10px;
+}
+
+footer.footer .footer-insta a {
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    padding-bottom: 28%;
+    transition: 0.4s ease-in-out;
+    margin: 0 15px 0px 0;
+    overflow: hidden;
+}
+
+footer.footer .footer-insta {
+    float: left;
+    font-size: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer.footer .footer-insta a:hover {
+    transform: scale(1.05);
+}
+
+footer.footer .footer-insta a img {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+footer.footer .knsl-copyright {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+footer.footer .knsl-copyright .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+footer.footer .copy-text {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+
+}
+
+footer.footer .copy-text a {
+    color: var(--red);
+}
+
+i.fa-brands.fa-x-twitter {
+    background-color: #4099ff !important;
+    color: #fff !important;
+}
+
+i.fa.fa-facebook {
+    background-color: #3B5998;
+}
+
+i.fa.fa-youtube-play {
+    background-color: #bb0000;
+}
+
+i.fa.fa-linkedin {
+    background: #0072b1;
+}
+
+i.fa.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+footer.footer .knsl-footer-social i:hover {
+    transform: translateY(-6px);
+}
+
+/*  */
+section.innrbnr {
+    margin-top: 78px;
+}
+
+section.innrbnr.terms {
+    background: url(../images/terms.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: bottom;
+}
+
+section.innrbnr .bnr-text h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*  */
+section.casino-sec {
+    padding: 80px 0;
+}
+
+.casino-inner .row .col-lg-4 {
+    margin-bottom: 30px;
+}
+
+.casino-inner .casino-box {
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.casino-inner .casino-box .casino-img {
+    position: relative;
+}
+
+.casino-inner .casino-box .casino-img img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.casino-inner .casino-box .casino-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e81f3e54;
+    transform: scale(0);
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+}
+
+.casino-inner .casino-box .casino-img:hover::after {
+    transform: scale(1);
+}
+
+.casino-text {
+    padding: 30px;
+}
+
+.casino-text h3 {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 24px;
+    margin: 0 0 14px 0;
+}
+
+.casino-btn a {
+    border: 2px solid #e81f3e;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #e81f3e;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0 0 0;
+
+}
+
+.casino-btn {
+    position: absolute;
+    bottom: 30px;
+}
+
+.casino-btn a:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.casino-text p {
+    font-size: 14px;
+    color: var(--black);
+    line-height: 28px;
+}
+
+.approach {
+    margin-top: 40px;
+}
+
+.approach p {
+    font-size: 14px;
+    color: var(--black);
+    line-height: 28px;
+}
+
+/*  */
+section.information {
+    background: url(../images/Gambling.avif);
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+}
+
+section.information::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #20273fba;
+    transition: all .5s;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+.information-text {
+    text-align: center;
+    color: #fff;
+}
+
+.information-text h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0 0 14px 0;
+    text-transform: capitalize;
+}
+
+.information-text p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+section.disclaimer {
+    margin-bottom: 80px;
+}
+
+.disclaimer-inner h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.disclaimer-inner p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+section.condition-inner {
+    padding: 40px 0 80px;
+}
+
+section.condition-inner h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: var(--black);
+}
+
+section.condition-inner h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: var(--black);
+}
+
+section.condition-inner p {
+    font-size: 16px;
+    line-height: 30px;
+
+    color: var(--black);
+}
+
+section.condition-inner p a {
+    color: var(--red);
+}
+
+section.condition-inner ul li {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+section.condition-inner ul li a {
+    color: var(--red);
+}
+
+section.best-wrapper {
+    padding: 60px 0;
+}
+
+.wrapper-inner p {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.niagara-wrapper {
+    box-shadow: 0 0 7px rgb(232 31 62 / 26%);
+    padding: 14px;
+}
+
+section.niagara .niagara-inner .post-text h4 {
+    border-top-left-radius: 20px;
+    margin-left: -20%;
+    margin-top: 1rem;
+    background-color: rgb(32 39 63 / 75%);
+    padding: 1rem 1.5rem 1rem;
+    border-bottom-right-radius: 20px;
+    color: var(--white);
+    transition: all 0.3s;
+    z-index: 999;
+    position: relative;
+}
+
+section.niagara .niagara-inner .post-text p {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    margin-top: 25px;
+    color: #424040;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+section.niagara {
+    padding-bottom: 60px;
+}
+
+section.niagara .niagara-inner .post-img img {
+    width: 100%;
+    height: 311px;
+    object-fit: cover;
+    animation: zoom 20s ease-in-out infinite;
+}
+
+.bnr_btn a {
+    border: 2px solid #e81f3e;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #e81f3e;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0 0 0;
+}
+
+.bnr_btn a:hover {
+    background-color: #e81f3e;
+    color: #fff;
+}
+
+.post-img {
+    overflow: hidden;
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.niagara-wrapper.detroit {
+    margin: 2rem 0 0 0;
+}
+
+section.innrbnr.best {
+    background: url(../images/Gambling.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+section.innrbnr.best::after {
+    content: '';
+    background: #000000b5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+section.best-wrapper.opulence {
+    padding-top: 0;
+}
+
+section.innrbnr.best.about {
+    background: url(../images/au_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+section.innrbnr.best.contact {
+    background: url(../images/contact.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.contact-form-wrapper {
+    padding-bottom: 80px;
+
+}
+
+.contact_us_f {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    padding: 50px;
+}
+
+.contact_us_f h2 {
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--black);
+}
+
+.contact-form .row {
+    align-items: center;
+}
+
+.form_div {
+    display: flex;
+}
+
+.form_div input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 28px;
+    margin-right: 14px;
+}
+
+textarea#w3review {
+    width: 100%;
+    padding: 16px;
+    margin-right: 14px;
+}
+
+input#sub {
+    padding: 14px 50px;
+    background-color: transparent;
+    color: var(--red);
+    border: none;
+    margin-top: 40px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid var(--red);
+    transition: all 0.3s ease-in-out;
+
+}
+
+input#sub:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.touch {
+    text-align: center;
+}
+
+.touch h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.mail ul li a i {
+    background: var(--red);
+    text-align: center;
+    border-radius: 37px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 9px;
+    border: 1px solid var(--red);
+    margin: 0 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.mail ul li a i:hover {
+    background-color: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.mail ul li a {
+    color: var(--black);
+}
+
+section.innrbnr.best.revue {
+    background: url(../images/Revue-Niagara.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.innrbnr.best.critique {
+    background: url(../images/caesars-windsor.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
