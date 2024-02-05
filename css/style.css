@@ -810,8 +810,21 @@ section.innrbnr.best.river-inner {
     background-position: center;
 }
 
-section.innrbnr.best.montr{
+section.innrbnr.best.montr {
     background: url(../images/Casino-Montreal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.innrbnr.best.examen {
+    background: url(../images/Hero_Fallsview_Hotel_Room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.innrbnr.best.rama{
+    background: url(../images/Casino-Rama-Resort.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
