@@ -801,3 +801,18 @@ section.innrbnr.best.critique {
     background-size: cover;
     background-position: center;
 }
+
+/*  */
+section.innrbnr.best.river-inner {
+    background: url(../images/River-Cree-Resort-&-Casino-Exterior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.innrbnr.best.montr{
+    background: url(../images/Casino-Montreal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
