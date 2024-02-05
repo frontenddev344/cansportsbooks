@@ -829,3 +829,15 @@ section.innrbnr.best.rama{
     background-size: cover;
     background-position: center;
 }
+section.innrbnr.best.hard{
+    background: url(../images/Hard-Rock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.innrbnr.best.grey {
+    background: url(../images/Grey-Eagle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
