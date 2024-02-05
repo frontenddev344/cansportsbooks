@@ -109,6 +109,10 @@ img {
     transition: transform 250ms ease-in-out;
 }
 
+.navigation.mySidenavs ul li a.active::after {
+    transform: scale(1);
+}
+
 .navigation.mySidenavs ul li a:hover::after {
     transform: scaleX(1);
 }
@@ -823,21 +827,37 @@ section.innrbnr.best.examen {
     background-size: cover;
     background-position: center;
 }
-section.innrbnr.best.rama{
+
+section.innrbnr.best.rama {
     background: url(../images/Casino-Rama-Resort.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-section.innrbnr.best.hard{
+
+section.innrbnr.best.hard {
     background: url(../images/Hard-Rock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 section.innrbnr.best.grey {
     background: url(../images/Grey-Eagle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+
+.wrapper-inner h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: var(--black);
+}
+.wrapper-inner h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: var(--black);
 }

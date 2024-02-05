@@ -17,6 +17,10 @@
 }
 
 @media screen and (max-width: 991px) {
+    section.niagara .niagara-inner .post-text h4 {
+        margin-left: 0;
+    }
+
     .form_div {
         display: flex;
         flex-direction: column;
@@ -85,5 +89,11 @@
 
     footer.footer .knsl-footer-social {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post-text h4 {
+        font-size: 18px;
     }
 }
