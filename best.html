@@ -12,7 +12,277 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+<style>
+  .desktop-version {
+display: block;
+}
+.mobile-view-design.entertainment {
+display: none;
+}
+@media screen and (max-width: 575px) {
+.desktop-version {
+display: none;
+}
 
+.mobile-view-design.entertainment {
+display: block;
+}
+.one_o a{
+text-decoration: none;
+}
+.bgi-casino {
+background: url(../images/bg-casion.jpg);
+padding: 70px 0;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+height: 220px;
+z-index: 1;
+display: flex;
+align-items: center;
+margin:42px 0 0 0;
+}
+
+.container.new {
+padding: 0 13px;
+}
+
+.bgi-casino::after {
+content: '';
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(0 0 0 / 76%);
+z-index: -1;
+
+}
+
+.mobile-view-design.entertainment {
+display: none;
+}
+
+.bgi-casino span {
+color: #d08a38;
+font-size: 18px;
+font-weight: 600;
+}
+
+.beste {
+font-size: 25px !important;
+font-weight: 600;
+color: #fff;
+max-width: 220px;
+width: 100%;
+}
+
+.encrypted {
+padding-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.encrypted p {
+display: flex;
+color: #fff;
+}
+
+.myceltwo {
+margin: 0 0 0 5px;
+}
+
+.mycel {
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+}
+
+img.encrypted-img {
+max-width: 20px;
+margin: 0 4px 0 0;
+height: 20px;
+object-fit: cover;
+}
+
+.mobile-view-design {
+background: #f4f4f4;
+padding-top: 43px;
+padding-bottom: 28px;
+display: none;
+}
+
+
+.warapper {
+background: rgba(215, 217, 219, 0);
+border-bottom: 4px solid #20273f;
+border-radius: 6px;
+margin: 30px 0;
+}
+
+
+.main_box {
+display: flex;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+background-color: #20273f;
+padding: 10px;
+position: relative;
+}
+
+.main_box::after {
+content: "";
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #e81f3ecf;
+position: absolute;
+clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+width: 55%;
+z-index: 2;
+}
+
+.beting_logo {
+width: 55%;
+z-index: 3;
+
+}
+
+.beting_logo img {
+width: 70%;
+height: 130px;
+object-fit: contain;
+}
+
+.one_o {
+width: 45%;
+}
+
+
+h6.heading_main {
+font-size: 25px !important;
+color: #fff;
+font-weight: 600;
+
+}
+
+.one_o p {
+color: #fff;
+font-size: 18px;
+margin: 10px 0;
+}
+
+.main-rate-star {
+display: flex;
+}
+
+p.rated-star {
+color: #fdbb4f;
+font-size: 14px !important;
+margin-bottom: 0 !important;
+}
+
+.mobile-view-design p {
+text-align: left !important;
+}
+
+.start_line {
+display: flex;
+align-items: baseline;
+justify-content: space-around;
+padding: 1px 0;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+background: #ffffff;
+margin: 17px 0;
+}
+
+p.rating-text {
+padding-bottom: 4px !important;
+margin: 0px !important;
+margin-top: 13px !important;
+color: #fff;
+font-size:13px;
+}
+
+p.rating-text b {
+color: #fff;
+font-size: 23px;
+}
+
+.notpad {
+padding: 0 9px;
+}
+
+.notpad p {
+    padding-bottom: 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.main-rate-star {
+display: flex;
+text-align: center;
+justify-content: center;
+
+}
+
+p.rated-star {
+color: #fdbb4f;
+font-size: 14px !important;
+}
+
+.awesome a {
+color: #0a072a;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 600;
+text-transform: uppercase;
+background: #fff;
+padding: 11px;
+text-align: center;
+border-radius: 6px;
+display: block;
+}
+
+
+.one_o p {
+line-height: 22px;
+font-size: 16px;
+}
+
+.text_auality h3 {
+color: #0a072a !important;
+font-size: 20px;
+font-weight: 600;
+}
+
+.text_auality h4 {
+color: #0a072a !important;
+font-size: 18px;
+font-weight: 600;
+padding: 10px 0;
+}
+}
+@media (max-width:480px) {
+  p.rating-text {
+    font-size: 12px;
+}
+}
+@media (max-width:380px) {
+.encrypted {
+padding-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 16px;
+justify-content: space-around;
+}
+
+}
+</style>
 <body>
 
     <!-- Header  -->
@@ -55,6 +325,8 @@
 
     </header>
     <!-- Header  -->
+
+    <div class="desktop-version">
     <!-- Banner section -->
     <section class="innrbnr best">
         <div class="container">
@@ -230,6 +502,346 @@
             </div>
         </div>
     </section>
+
+</div>
+
+ <!-- site betting-setup start -->
+  <div class="mobile-view-design entertainment">
+    <section class="mobile-view">
+
+      <div class="bgi-casino">
+        <div class="container new">
+          <h2 class="beste">
+            Sites de paris Canada</h2>
+
+          <div class="encrypted">
+            <p><img src="images/encrypted.png" alt="" class="encrypted-img">100% sécurisé
+</p>
+            <p><img src="images/canadaflag.png" alt="" class="encrypted-img"> FR Players</p>
+            <p><img src="images/images-removebg-preview.png" alt="" class="encrypted-img">Retraits rapides</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container new">
+
+        <!-- ivibet -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://media.hellpartners.com/redirect.aspx?pid=18490&bid=1478&lpid=159" target="_blank"><img
+                  src="images/ivibet.png" alt="">
+              </a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.9</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://media.hellpartners.com/redirect.aspx?pid=18490&bid=1478&lpid=159" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p> Jusqu'a 230$</p>
+              </a>
+              <div class="awesome">
+                <a href="https://media.hellpartners.com/redirect.aspx?pid=18490&bid=1478&lpid=159"
+                  target="_blank">s'inscrire</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- ivibet -->
+
+        <!-- 888 -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://ic.aff-handler.com/c/47773?sr=1836993" target="_blank"><img
+                  src="images/888sport.png" alt=""></a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.9</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://ic.aff-handler.com/c/47773?sr=1836993" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p>100% Bonus Jusqu'a $300</p>
+              </a>
+              <div class="awesome">
+                <a href="https://ic.aff-handler.com/c/47773?sr=1836993"
+                  target="_blank">s'inscrire</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- 888 -->
+
+        <!-- tonybet -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=163957&bid=1992&lpid=43" target="_blank"><img src="images/tonybet.png"
+                  alt=""></a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.8</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=163957&bid=1992&lpid=43" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p> 100 % jusqu'à 350 $</p>
+              </a>
+              <div class="awesome">
+                <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=163957&bid=1992&lpid=43" target="_blank">s'inscrire</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- tonybet -->
+
+        <!-- Librabet -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://lrb.servclick1move.com/?mid=72961_554665" target="_blank"><img
+                  src="images/librabet.png" alt=""></a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.8</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://lrb.servclick1move.com/?mid=72961_554665" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p>100 % jusqu'à 150 $</p>
+              </a>
+              <div class="awesome">
+                <a href="https://lrb.servclick1move.com/?mid=72961_554665" target="_blank">s'inscrire</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Librabet -->
+
+
+        <!-- Quickwin -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://awbba.zetcasino.com/redirect.aspx?pid=1364229&bid=7369" target="_blank"><img
+                  src="images/quickwin.png" alt="">
+              </a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.7</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://awbba.zetcasino.com/redirect.aspx?pid=1364229&bid=7369" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p> 100 % jusqu'à 150 $</p>
+              </a>
+              <div class="awesome">
+                <a href="https://awbba.zetcasino.com/redirect.aspx?pid=1364229&bid=7369"
+                  target="_blank">s'inscrire</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Quickwin -->
+
+
+        <!-- 20bet -->
+        <div class="warapper">
+          <div class="main_box">
+            <div class="beting_logo">
+              <a href="https://media.toxtren.com/redirect.aspx?pid=227804&bid=1971&lpid=278" target="_blank"><img
+                  src="images/20bet.png" alt="">
+              </a>
+              <div class="mycel">
+                <div class="mycelonw">
+                  <div class="main-rate-star">
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star big"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="rate notpad">
+                    <p>Votes (757)
+</p>
+
+                  </div>
+                </div>
+                <div class="myceltwo">
+                  <div class="rate ">
+                    <p class="rating-text"><b>9.7</b> <br>Commentaires
+</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_o">
+              <a href="https://media.toxtren.com/redirect.aspx?pid=227804&bid=1971&lpid=278" target="_blank">
+                <h6 class="heading_main">
+                  Bonus de bienvenue
+
+</h6>
+                <p>$150 de bonus gratuit</p>
+              </a>
+              <div class="awesome">
+                <a href="https://media.toxtren.com/redirect.aspx?pid=227804&bid=1971&lpid=278" target="_blank">s'inscrire</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- 20bet -->
+
+
+        <!-- <div class="text_auality">
+          <p class="para-b">Unser engagiertes Team bewertet jede Wettseite sorgfältig und berücksichtigt dabei
+            Faktoren wie Sportberichterstattung, Quotenqualität, Benutzeroberfläche und verlockende
+            Boni. Bei Wettauf glauben wir daran, Ihnen die Informationen zur Verfügung zu stellen,
+            die Sie benötigen, um fundierte Entscheidungen zu treffen, die auf Ihre Wettpräferenzen
+            zugeschnitten sind.
+          </p>
+          <p class="para-b">
+            Ganz gleich, ob Sie ein erfahrener Spieler oder ein Neueinsteiger sind, der die Spannung
+            des Online-Wettens entdecken möchte, Wettauf ist Ihre Anlaufstelle für die Entdeckung
+            der besten Wettanbieter in der Schweiz. Entdecken Sie die einzigartigen Funktionen und
+            Vorteile jeder Plattform und sorgen Sie für ein sicheres, angenehmes und lohnendes
+            Wetterlebnis. Machen Sie Wettauf zu Ihrem Ausgangspunkt für eine aufregende Reise in die
+            Welt der Online-Sportwetten in der Schweiz. Ihre Gewinnwetten beginnen hier!
+          </p>
+        </div> -->
+      </div>
+    </section>
+  </div>
+  <!-- site betting-setup end -->
 
     <!-- Footer  -->
     <footer class="footer">

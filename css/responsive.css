@@ -97,3 +97,259 @@
         font-size: 18px;
     }
 }
+@media screen and (max-width: 575px) {
+.desktop-version {
+display: none;
+}
+
+.mobile-view-design.entertainment {
+display: block;
+}
+.one_o a{
+text-decoration: none;
+}
+.bgi-casino {
+background: url(../images/bg-casion.jpg);
+padding: 70px 0;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+height: 220px;
+z-index: 1;
+display: flex;
+align-items: center;
+margin:42px 0 0 0;
+}
+
+.container.new {
+padding: 0 13px;
+}
+
+.bgi-casino::after {
+content: '';
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(0 0 0 / 76%);
+z-index: -1;
+
+}
+
+.mobile-view-design.entertainment {
+display: block;
+}
+
+.bgi-casino span {
+color: #d08a38;
+font-size: 18px;
+font-weight: 600;
+}
+
+.beste {
+font-size: 25px !important;
+font-weight: 600;
+color: #fff;
+max-width: 220px;
+width: 100%;
+}
+
+.encrypted {
+padding-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.encrypted p {
+display: flex;
+color: #fff;
+}
+
+.myceltwo {
+margin: 0 0 0 10px;
+}
+
+.mycel {
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+}
+
+img.encrypted-img {
+max-width: 20px;
+margin: 0 4px 0 0;
+height: 20px;
+object-fit: cover;
+}
+
+.mobile-view-design {
+background: #f4f4f4;
+padding-top: 43px;
+padding-bottom: 28px;
+display: none;
+}
+
+
+.warapper {
+background: rgba(215, 217, 219, 0);
+border-bottom: 4px solid #20273f;
+border-radius: 6px;
+margin: 30px 0;
+}
+
+
+.main_box {
+display: flex;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+background-color: #20273f;
+padding: 10px;
+position: relative;
+}
+
+.main_box::after {
+content: "";
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #e81f3ecf;
+position: absolute;
+clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+width: 55%;
+z-index: 2;
+}
+
+.beting_logo {
+width: 55%;
+z-index: 3;
+
+}
+
+.beting_logo img {
+width: 70%;
+height: 130px;
+object-fit: contain;
+}
+
+.one_o {
+width: 45%;
+}
+
+
+h6.heading_main {
+font-size: 25px !important;
+color: #fff;
+font-weight: 600;
+
+}
+
+.one_o p {
+color: #fff;
+font-size: 18px;
+margin: 10px 0;
+}
+
+.main-rate-star {
+display: flex;
+}
+
+p.rated-star {
+color: #fdbb4f;
+font-size: 14px !important;
+margin-bottom: 0 !important;
+}
+
+.mobile-view-design p {
+text-align: left !important;
+}
+
+.start_line {
+display: flex;
+align-items: baseline;
+justify-content: space-around;
+padding: 1px 0;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+background: #ffffff;
+margin: 17px 0;
+}
+
+p.rating-text {
+padding-bottom: 4px !important;
+margin: 0px !important;
+margin-top: 13px !important;
+color: #fff;
+}
+
+p.rating-text b {
+color: #fff;
+font-size: 23px;
+}
+
+.notpad {
+padding: 0 9px;
+}
+
+.notpad p {
+padding-bottom: 0;
+color: #fff;
+}
+
+.main-rate-star {
+display: flex;
+text-align: center;
+justify-content: center;
+
+}
+
+p.rated-star {
+color: #fdbb4f;
+font-size: 14px !important;
+}
+
+.awesome a {
+color: #0a072a;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 600;
+text-transform: uppercase;
+background: #fff;
+padding: 11px;
+text-align: center;
+border-radius: 6px;
+display: block;
+}
+
+
+.one_o p {
+line-height: 22px;
+font-size: 16px;
+}
+
+.text_auality h3 {
+color: #0a072a !important;
+font-size: 20px;
+font-weight: 600;
+}
+
+.text_auality h4 {
+color: #0a072a !important;
+font-size: 18px;
+font-weight: 600;
+padding: 10px 0;
+}
+}
+
+@media (max-width:380px) {
+.encrypted {
+padding-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 16px;
+justify-content: space-around;
+}
+}
